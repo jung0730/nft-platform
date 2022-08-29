@@ -10,14 +10,20 @@
 </head>
 
 <body>
-  <header class="header">
-    這是 header
+  <header class="bg-gray-light">
+    <nav class="container flex justify-between py-4">
+      <img src="./assets/images/logo.svg" class="w-20">
+      <div class="flex">
+        <img src="./assets/images/magnifying-glass-solid.svg" class="w-5 mr-6 cursor-pointer">
+        <img src="./assets/images/bars-solid.svg" class="w-5 cursor-pointer">
+      </div>
+    </nav>
   </header>
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
+  <footer class="bg-gray-light py-6 text-center border-t-4">
+    © ART NFT. All Rights Reserved
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
