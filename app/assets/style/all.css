@@ -39,3 +39,7 @@
 .btn-triangle:hover::after{
   border-bottom: 16px black solid;
 }
+
+.vertical-writing {
+  writing-mode: vertical-lr;
+}
