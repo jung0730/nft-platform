@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .btn-primary {
+    @apply relative py-2 px-12 border text-lg hover:bg-red hover:text-white hover:border-black btn-triangle;
+  }
+  .btn-white {
+    @apply relative py-2 px-12 text-lg hover:bg-red hover:text-white hover:border hover:border-black btn-triangle;
+  }
+}
 
 @media(min-width: 768px) {
   .ranking-card {
@@ -18,4 +26,16 @@
     font-size: 32px;
     text-align: center;
   }
+}
+
+.btn-triangle::after {
+  content:"";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-left: 16px transparent solid;
+  border-bottom: 16px #E6553B solid;
+}
+.btn-triangle:hover::after{
+  border-bottom: 16px black solid;
 }
