@@ -43,3 +43,33 @@
 .vertical-writing {
   writing-mode: vertical-lr;
 }
+
+.tab-active {
+  color: black;
+  border-bottom: none;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+/* .tab-content {
+  display: none;
+} */
+
+.collection-card::before {
+  content:"";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-bottom: 24px transparent solid;
+  border-left: 24px black solid;
+}
+
+.collection-card::after {
+  content:"";
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-bottom: 24px transparent solid;
+  border-right: 24px black solid;
+}
