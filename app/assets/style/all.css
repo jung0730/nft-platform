@@ -52,10 +52,6 @@
   border-left: 1px solid black;
 }
 
-/* .tab-content {
-  display: none;
-} */
-
 .collection-card::before {
   content:"";
   position: absolute;
