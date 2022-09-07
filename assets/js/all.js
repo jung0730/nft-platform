@@ -9,10 +9,11 @@ var $grid = $('.grid').masonry({
 
 $grid.imagesLoaded().progress(function () {
   $grid.masonry('layout');
-}); // document.addEventListener('DOMContentLoaded',function(){
-//   var collection = document.getElementById("Collection");
-//   collection.style.display = "none";
-// });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  var collection = document.getElementById("Collection");
+  collection.style.display = "none";
+});
 
 function switchTab(evt, name) {
   // Declare all variables
