@@ -115,7 +115,7 @@ current: index
     <li class="flex border w-full ranking-card mb-4 md:mb-0">
       <div class="text-2xl w-12 flex items-center justify-center">4</div>
       <div class="w-24 group cursor-pointer relative bg-black">
-        <div class="absolute top-2/4 left-2/4 z-10 hidden group-hover:block -translate-y-2/4 -translate-x-2/4">
+        <div class="absolute top-2/4 left-2/4 hidden group-hover:block -translate-y-2/4 -translate-x-2/4">
           <p class="text-white text-lg">More</p>
         </div>
         <img src="./assets/images/art07.jpg" class="object-cover aspect-square group-hover:opacity-30">
@@ -134,7 +134,7 @@ current: index
     <li class="flex border w-full ranking-card mb-4 md:mb-0">
       <div class="text-2xl w-12 flex items-center justify-center">5</div>
       <div class="w-24 group cursor-pointer relative bg-black">
-        <div class="absolute top-2/4 left-2/4 z-10 hidden group-hover:block -translate-y-2/4 -translate-x-2/4">
+        <div class="absolute top-2/4 left-2/4 hidden group-hover:block -translate-y-2/4 -translate-x-2/4">
           <p class="text-white text-lg">More</p>
         </div>
         <img src="./assets/images/art08.jpg" class="object-cover aspect-square group-hover:opacity-30">
@@ -153,7 +153,7 @@ current: index
     <li class="flex border w-full ranking-card mb-4 md:mb-0">
       <div class="text-2xl w-12 flex items-center justify-center">6</div>
       <div class="w-24 group cursor-pointer relative bg-black">
-        <div class="absolute top-2/4 left-2/4 z-10 hidden group-hover:block -translate-y-2/4 -translate-x-2/4">
+        <div class="absolute top-2/4 left-2/4 hidden group-hover:block -translate-y-2/4 -translate-x-2/4">
           <p class="text-white text-lg">More</p>
         </div>
         <img src="./assets/images/art09.jpg" class="object-cover aspect-square group-hover:opacity-30">
@@ -192,7 +192,19 @@ current: index
   <div class="grid -mx-3">
     <div class="grid-sizer w-1/2 px-3 md:w-1/4"></div>
     <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-primary-outline self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art09.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
       <p class="text-sm pl-2">區塊戀-他的私生活</p>
