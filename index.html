@@ -20,17 +20,21 @@
         <div class="flex items-center">
           <div class="flex items-center md:border-l md:border-r px-0 md:px-12 py-0 md:py-8">
             <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="border-0 bg-transparent mr-0 sm:mr-3 md:mr-6 focus:shadow-none">
-            <i class="fa-solid fa-magnifying-glass w-5 mr-3 sm:mr-6 md:mr-0 cursor-pointer"></i>
+            <a href="javascript:void(0);" class="hover:text-red">
+              <i class="fa-solid fa-magnifying-glass w-5 mr-3 sm:mr-6 md:mr-0 cursor-pointer text-2xl"></i>
+            </a>
           </div>
-          <i class="fa-solid fa-bars w-5 cursor-pointer md:hidden"></i>
+          <a href="javascript:void(0);" onclick="toggleNav()">
+            <i class="fa-solid fa-bars w-5 cursor-pointer md:hidden text-2xl"></i>
+          </a>
         </div>
       </div>
-      <ul class="flex flex-col md:flex-row w-full md:w-auto text-center bg-white md:bg-transparent font-bold">
-        <li class="md:border-r px-12 py-6 md:py-10 mx-3 md:mx-0 border-b md:border-b-0"><a href="#" class="p-4">探索</a></li>
-        <li class="md:border-r px-12 py-6 md:py-10 mx-3 md:mx-0"><a href="#" class="p-4">市值</a></li>
+      <ul class="hidden md:flex flex-col md:flex-row w-full md:w-auto text-center bg-white md:bg-transparent font-bold menu">
+        <li class="md:border-r px-12 py-6 md:py-10 mx-3 md:mx-0 border-b md:border-b-0 self-center"><a href="#" class="p-4 hover:text-red">探索</a></li>
+        <li class="md:border-r px-12 py-6 md:py-10 mx-3 md:mx-0 self-center"><a href="#" class="p-4 hover:text-red">市值</a></li>
         <li class="mx-3 md:mx-0 mb-6 md:mb-0">
-          <a href="#" class="hidden md:block px-12 py-10">
-            <i class="fa-solid fa-wallet"></i>
+          <a href="#" class="hidden md:block px-12 py-10 hover:text-red">
+            <i class="fa-solid fa-wallet text-2xl"></i>
           </a>
           <button class="md:hidden bg-red text-white w-full py-3">連結錢包</button>
         </li>
@@ -45,7 +49,7 @@
     <li class="flex flex-col md:flex-row border-b-2 md:w-full">
       <div class="hidden md:block vertical-writing text-5xl p-6 bg-black text-white">Recommend<spam class="text-xl mt-3 font-bold">推 薦 系 列</spam></div>
       <div class="w-full">
-        <img src="assets/images/art01.jpg" class="object-cover">
+        <img src="assets/images/art01.jpg" class="object-cover h-full">
       </div>
       <div class="py-8 px-3 md:px-6 md:pt-20 md:pb-6 flex flex-col justify-between">
         <div>
@@ -58,7 +62,7 @@
     </li>
     <li class="flex flex-col border-b-2 md:flex-row-reverse md:w-1/2">
       <div class="md:w-1/2">
-        <img src="assets/images/art02.jpg" class="object-cover aspect-square">
+        <img src="assets/images/art02.jpg" class="object-cover aspect-square h-full">
       </div>
       <div class="py-8 px-3 md:px-6 md:pt-12 md:pb-6 md:w-1/2 flex flex-col justify-between">
         <div>
@@ -71,7 +75,7 @@
     </li>
     <li class="flex flex-col border-b-2 md:flex-row-reverse md:w-1/2">
       <div class="md:w-1/2">
-        <img src="assets/images/art21.jpg" class="object-cover aspect-square">
+        <img src="assets/images/art21.jpg" class="object-cover aspect-square h-full">
       </div>
       <div class="py-8 px-3 md:px-6 md:pt-12 md:pb-6 md:w-1/2 flex flex-col justify-between">
         <div>
@@ -87,13 +91,13 @@
 <section class="mb-10 container">
   <div class="flex justify-between border-b mb-6">
     <h2 class="text-3xl">Ranking</h2>
-    <button class="btn-white">MORE</button>
+    <button class="btn-white-outline">MORE</button>
   </div>
   <ul class="flex flex-wrap md:gap-6">
     <li class="flex border w-full ranking-card mb-4 md:mb-0 md:flex-col ranking-card ranking-order" data-order="1">
       <div class="text-2xl w-12 flex items-center justify-center md:hidden relative">1</div>
-      <div class="group w-24 md:w-full relative cursor-pointer md:hover:bg-gray">
-        <img src="./assets/images/art04.jpg" class="object-cover aspect-square">
+      <div class="group w-24 md:w-full relative cursor-pointer bg-black">
+        <img src="./assets/images/art04.jpg" class="object-cover aspect-square group-hover:opacity-30">
         <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block">
           <button class="btn-primary">MORE</button>
         </div>
@@ -111,11 +115,11 @@
     </li>
     <li class="flex border w-full ranking-card mb-4 md:mb-0 md:flex-col ranking-card ranking-order" data-order="2">
       <div class="text-2xl w-12 flex items-center justify-center md:hidden">2</div>
-      <div class="group w-24 md:w-full relative cursor-pointer md:hover:bg-gray">
+      <div class="group w-24 md:w-full relative cursor-pointer bg-black">
         <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block">
           <button class="btn-primary">MORE</button>
         </div>
-        <img src="./assets/images/art05.jpg" class="object-cover aspect-square">
+        <img src="./assets/images/art05.jpg" class="object-cover aspect-square group-hover:opacity-30">
       </div>
       <div class="flex grow flex-col">
         <h3 class="text-lg font-bold border-b px-2 grow flex items-center md:py-4">爆炸頭的母親</h3>
@@ -130,11 +134,11 @@
     </li>
     <li class="flex border w-full ranking-card mb-4 md:mb-0 md:flex-col ranking-card ranking-order" data-order="3">
       <div class="text-2xl w-12 flex items-center justify-center md:hidden">3</div>
-      <div class="group w-24 md:w-full relative cursor-pointer md:hover:bg-gray">
+      <div class="group w-24 md:w-full relative cursor-pointer bg-black">
         <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block">
           <button class="btn-primary">MORE</button>
         </div>
-        <img src="./assets/images/art06.jpg" class="object-cover aspect-square">
+        <img src="./assets/images/art06.jpg" class="object-cover aspect-square group-hover:opacity-30">
       </div>
       <div class="flex grow flex-col">
         <h3 class="text-lg font-bold border-b px-2 grow flex items-center md:py-4">夏天的時候</h3>
@@ -149,8 +153,11 @@
     </li>
     <li class="flex border w-full ranking-card mb-4 md:mb-0">
       <div class="text-2xl w-12 flex items-center justify-center">4</div>
-      <div class="w-24">
-        <img src="./assets/images/art07.jpg" class="object-cover aspect-square">
+      <div class="w-24 group cursor-pointer relative bg-black">
+        <div class="absolute top-2/4 left-2/4 hidden group-hover:block -translate-y-2/4 -translate-x-2/4">
+          <p class="text-white text-lg">More</p>
+        </div>
+        <img src="./assets/images/art07.jpg" class="object-cover aspect-square group-hover:opacity-30">
       </div>
       <div class="flex grow flex-col">
         <h3 class="text-lg font-bold border-b px-2 grow flex items-center">追求者送我的花</h3>
@@ -165,8 +172,11 @@
     </li>
     <li class="flex border w-full ranking-card mb-4 md:mb-0">
       <div class="text-2xl w-12 flex items-center justify-center">5</div>
-      <div class="w-24">
-        <img src="./assets/images/art08.jpg" class="object-cover aspect-square">
+      <div class="w-24 group cursor-pointer relative bg-black">
+        <div class="absolute top-2/4 left-2/4 hidden group-hover:block -translate-y-2/4 -translate-x-2/4">
+          <p class="text-white text-lg">More</p>
+        </div>
+        <img src="./assets/images/art08.jpg" class="object-cover aspect-square group-hover:opacity-30">
       </div>
       <div class="flex grow flex-col">
         <h3 class="text-lg font-bold border-b px-2 grow flex items-center">今天釣到的魚</h3>
@@ -181,8 +191,11 @@
     </li>
     <li class="flex border w-full ranking-card mb-4 md:mb-0">
       <div class="text-2xl w-12 flex items-center justify-center">6</div>
-      <div class="w-24">
-        <img src="./assets/images/art09.jpg" class="object-cover aspect-square">
+      <div class="w-24 group cursor-pointer relative bg-black">
+        <div class="absolute top-2/4 left-2/4 hidden group-hover:block -translate-y-2/4 -translate-x-2/4">
+          <p class="text-white text-lg">More</p>
+        </div>
+        <img src="./assets/images/art09.jpg" class="object-cover aspect-square group-hover:opacity-30">
       </div>
       <div class="flex grow flex-col">
         <h3 class="text-lg font-bold border-b px-2 grow flex items-center">人生中的貓咪們</h3>
@@ -200,7 +213,7 @@
 <section class="mb-10 container">
   <div class="flex justify-between border-b mb-6">
     <h2 class="text-3xl">Artist</h2>
-    <button class="btn-white">MORE</button>
+    <button class="btn-white-outline">MORE</button>
   </div>
   <div style="background-image: url(./assets/images/artist02.jpg);" class="mb-4 relative bg-cover bg-no-repeat bg-center w-full h-half-screen">
     <h3 class="text-white text-3xl absolute top-6 left-6">Antony Wu</h3>
@@ -213,57 +226,153 @@
 <section class="mb-10 container"> 
   <div class="flex justify-between border-b mb-6">
     <h2 class="text-3xl">Artwork</h2>
-    <button class="btn-white">MORE</button>
+    <button class="btn-white-outline">MORE</button>
   </div>
   <div class="grid -mx-3">
     <div class="grid-sizer w-1/2 px-3 md:w-1/4"></div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art09.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">區塊戀-他的私生活</p>
+      <p class="text-sm pl-2 pb-4 border-b">區塊戀-他的私生活</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art10.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">夏娃的醜聞</p>
+      <p class="text-sm pl-2 pb-4 border-b">夏娃的醜聞</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art02.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">藍色啤酒海</p>
+      <p class="text-sm pl-2 pb-4 border-b">藍色啤酒海</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art11.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">沒有人愛我</p>
+      <p class="text-sm pl-2 pb-4 border-b">沒有人愛我</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art12.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">不哭不哭眼淚是珍珠</p>
+      <p class="text-sm pl-2 pb-4 border-b">不哭不哭眼淚是珍珠</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art03.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">十分鐘就到</p>
+      <p class="text-sm pl-2 pb-4 border-b">十分鐘就到</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art04.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">我這樣有美嗎</p>
+      <p class="text-sm pl-2 pb-4 border-b">我這樣有美嗎</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art27.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">我真的受傷了</p>
+      <p class="text-sm pl-2 pb-4 border-b">我真的受傷了</p>
     </div>
   </div>
 </section>
@@ -307,3 +416,10 @@
 </body>
 
 </html>
+<script>
+  function toggleNav() {
+    console.log('a')
+    const ul = document.querySelector('.menu');
+    ul.style.display = (ul.style.display) === 'block' ? 'none' : 'block';
+  }
+</script>
