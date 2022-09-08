@@ -3,13 +3,16 @@
 @tailwind utilities;
 @layer components {
   .btn-primary-outline {
-    @apply relative py-2 px-12 border text-lg hover:bg-red hover:text-white hover:border-black btn-triangle;
+    @apply relative py-2 px-12 border text-lg hover:bg-red hover:text-white hover:border-black btn-triangle-red;
   }
-  .btn-white {
-    @apply relative py-2 px-12 text-lg hover:bg-red hover:text-white hover:border hover:border-black btn-triangle;
+  .btn-white-outline {
+    @apply relative py-2 px-12 text-lg hover:bg-red hover:text-white hover:border hover:border-black btn-triangle-red;
   }
   .btn-primary {
     @apply relative py-2 px-12 border text-lg bg-red text-white border-black btn-triangle-black;
+  }
+  .btn-white {
+    @apply relative py-2 px-12 border text-lg bg-white text-black border-black btn-triangle;
   }
 }
 
@@ -32,7 +35,7 @@
   }
 }
 
-.btn-triangle::after {
+.btn-triangle::after, .btn-triangle-red::after {
   content:"";
   position: absolute;
   right: 0;
@@ -40,7 +43,7 @@
   border-left: 16px transparent solid;
   border-bottom: 16px #E6553B solid;
 }
-.btn-triangle:hover::after{
+.btn-triangle-red:hover::after{
   border-bottom: 16px black solid;
 }
 .btn-triangle-black::after {

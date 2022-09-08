@@ -10,7 +10,7 @@ current: index
     <li class="flex flex-col md:flex-row border-b-2 md:w-full">
       <div class="hidden md:block vertical-writing text-5xl p-6 bg-black text-white">Recommend<spam class="text-xl mt-3 font-bold">推 薦 系 列</spam></div>
       <div class="w-full">
-        <img src="assets/images/art01.jpg" class="object-cover">
+        <img src="assets/images/art01.jpg" class="object-cover h-full">
       </div>
       <div class="py-8 px-3 md:px-6 md:pt-20 md:pb-6 flex flex-col justify-between">
         <div>
@@ -23,7 +23,7 @@ current: index
     </li>
     <li class="flex flex-col border-b-2 md:flex-row-reverse md:w-1/2">
       <div class="md:w-1/2">
-        <img src="assets/images/art02.jpg" class="object-cover aspect-square">
+        <img src="assets/images/art02.jpg" class="object-cover aspect-square h-full">
       </div>
       <div class="py-8 px-3 md:px-6 md:pt-12 md:pb-6 md:w-1/2 flex flex-col justify-between">
         <div>
@@ -36,7 +36,7 @@ current: index
     </li>
     <li class="flex flex-col border-b-2 md:flex-row-reverse md:w-1/2">
       <div class="md:w-1/2">
-        <img src="assets/images/art21.jpg" class="object-cover aspect-square">
+        <img src="assets/images/art21.jpg" class="object-cover aspect-square h-full">
       </div>
       <div class="py-8 px-3 md:px-6 md:pt-12 md:pb-6 md:w-1/2 flex flex-col justify-between">
         <div>
@@ -52,7 +52,7 @@ current: index
 <section class="mb-10 container">
   <div class="flex justify-between border-b mb-6">
     <h2 class="text-3xl">Ranking</h2>
-    <button class="btn-white">MORE</button>
+    <button class="btn-white-outline">MORE</button>
   </div>
   <ul class="flex flex-wrap md:gap-6">
     <li class="flex border w-full ranking-card mb-4 md:mb-0 md:flex-col ranking-card ranking-order" data-order="1">
@@ -174,7 +174,7 @@ current: index
 <section class="mb-10 container">
   <div class="flex justify-between border-b mb-6">
     <h2 class="text-3xl">Artist</h2>
-    <button class="btn-white">MORE</button>
+    <button class="btn-white-outline">MORE</button>
   </div>
   <div style="background-image: url(./assets/images/artist02.jpg);" class="mb-4 relative bg-cover bg-no-repeat bg-center w-full h-half-screen">
     <h3 class="text-white text-3xl absolute top-6 left-6">Antony Wu</h3>
@@ -187,11 +187,11 @@ current: index
 <section class="mb-10 container"> 
   <div class="flex justify-between border-b mb-6">
     <h2 class="text-3xl">Artwork</h2>
-    <button class="btn-white">MORE</button>
+    <button class="btn-white-outline">MORE</button>
   </div>
   <div class="grid -mx-3">
     <div class="grid-sizer w-1/2 px-3 md:w-1/4"></div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
       <div class="mb-2 group bg-black cursor-pointer relative">
         <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
           <div class="flex h-full flex-col justify-between border-white border p-4">
@@ -202,54 +202,138 @@ current: index
                 <span>300</span>
               </div>
             </div>
-            <button class="btn-primary-outline self-end">MORE</button>
+            <button class="btn-white self-end">MORE</button>
           </div>
         </div>
         <img src="assets/images/art09.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">區塊戀-他的私生活</p>
+      <p class="text-sm pl-2 pb-4 border-b">區塊戀-他的私生活</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art10.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">夏娃的醜聞</p>
+      <p class="text-sm pl-2 pb-4 border-b">夏娃的醜聞</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art02.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">藍色啤酒海</p>
+      <p class="text-sm pl-2 pb-4 border-b">藍色啤酒海</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art11.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">沒有人愛我</p>
+      <p class="text-sm pl-2 pb-4 border-b">沒有人愛我</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art12.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">不哭不哭眼淚是珍珠</p>
+      <p class="text-sm pl-2 pb-4 border-b">不哭不哭眼淚是珍珠</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art03.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">十分鐘就到</p>
+      <p class="text-sm pl-2 pb-4 border-b">十分鐘就到</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art04.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">我這樣有美嗎</p>
+      <p class="text-sm pl-2 pb-4 border-b">我這樣有美嗎</p>
     </div>
-    <div class="grid-item w-1/2 px-3 mb-4 md:w-1/4">
-      <div class="mb-2 group bg-black cursor-pointer">
+    <div class="grid-item w-1/2 px-3 mb-12 md:w-1/4">
+      <div class="mb-2 group bg-black cursor-pointer relative">
+        <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block h-full w-full p-6">
+          <div class="flex h-full flex-col justify-between border-white border p-4">
+            <div>
+              <p class="text-white">唯一想擁有的人，唯一不可以擁有的</p>
+              <div class="flex items-center text-white">
+                <i class="fa-brands fa-ethereum w-2 mr-2"></i>
+                <span>300</span>
+              </div>
+            </div>
+            <button class="btn-white self-end">MORE</button>
+          </div>
+        </div>
         <img src="assets/images/art27.jpg" class="border-white border-[10px] group-hover:opacity-30">
       </div>
-      <p class="text-sm pl-2">我真的受傷了</p>
+      <p class="text-sm pl-2 pb-4 border-b">我真的受傷了</p>
     </div>
   </div>
 </section>
