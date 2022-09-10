@@ -13,14 +13,14 @@
 <body>
   <header class="bg-gray-light md:border-b">
     <nav class="md:container flex items-center flex-col md:flex-row">
-      <div class="flex w-full md:w-auto justify-between items-center flex-1 py-4 px-4 md:py-0 md:px-0">
+      <div class="flex w-full min-h-[72px] md:w-auto justify-between items-center flex-1 py-4 px-4 md:py-0 md:px-0">
         <h1>
           <a href="index.html" class="w-[5.33rem] md:w-[11.875rem] h-[1.125rem] md:h-10 block indent-[101%] overflow-hidden whitespace-nowrap bg-cover" style="background-image: url('./assets/images/logo.svg');">Art NFT</a>
         </h1>
         <div class="flex items-center">
           <div class="flex items-center md:border-l md:border-r px-0 md:px-12 py-0 md:py-8">
-            <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="border-0 bg-transparent mr-0 sm:mr-3 md:mr-6 focus:ring-0">
-            <a href="javascript:void(0);" class="hover:text-red">
+            <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="w-64 hidden md:block border-0 bg-transparent mr-0 sm:mr-3 md:mr-6 focus:ring-0 search">
+            <a href="javascript:void(0);" class="hover:text-red" onclick="toggleSearchBar()">
               <i class="fa-solid fa-magnifying-glass w-5 mr-3 sm:mr-6 md:mr-0 cursor-pointer text-2xl"></i>
             </a>
           </div>
@@ -46,8 +46,10 @@
     <%- contents %>
   </main>
 
-  <footer class="bg-gray-light py-6 text-center border-t-4">
-    <p>© ART NFT. All Rights Reserved</p>
+  <footer class="bg-gray-light text-center border-t">
+    <div class="mt-2 border-t-2">
+      <p class="py-6">© ART NFT. All Rights Reserved</p>
+    </div>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
@@ -58,8 +60,15 @@
 </html>
 <script>
   function toggleNav() {
-    console.log('a')
     const ul = document.querySelector('.menu');
     ul.style.display = (ul.style.display) === 'block' ? 'none' : 'block';
+  }
+
+  function toggleSearchBar() {
+    const mediaQuery = window.matchMedia('(max-width: 767px)')
+    const ul = document.querySelector('.search');
+    if (mediaQuery.matches) {
+      ul.style.display = (ul.style.display) === 'block' ? 'none' : 'block';
+    }
   }
 </script>
