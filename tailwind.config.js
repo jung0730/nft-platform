@@ -19,7 +19,12 @@ module.exports = {
     extend: {
       height: {
         'half-screen': '50vh',
-      }
+      },
+      fontFamily:{
+        'sans': ['Noto Sans TC', 'system-ui', 'sans-serif'],
+        'dis1': ['Squada One'],
+        'dis2': ['Paytone One'],
+      },
     }
   },
   plugins: [
