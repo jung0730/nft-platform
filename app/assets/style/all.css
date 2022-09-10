@@ -6,7 +6,7 @@
     @apply relative py-2 px-12 border text-lg hover:bg-red hover:text-white hover:border-black btn-triangle-red;
   }
   .btn-white-outline {
-    @apply relative py-2 px-12 text-lg hover:bg-red hover:text-white hover:border hover:border-black btn-triangle-red;
+    @apply relative py-2 px-12 text-lg hover:bg-red hover:text-white border-transparent btn-triangle-red;
   }
   .btn-primary {
     @apply relative py-2 px-12 border text-lg bg-red text-white border-black btn-triangle-black;

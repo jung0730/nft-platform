@@ -19,7 +19,7 @@
         </h1>
         <div class="flex items-center">
           <div class="flex items-center md:border-l md:border-r px-0 md:px-12 py-0 md:py-8">
-            <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="border-0 bg-transparent mr-0 sm:mr-3 md:mr-6 focus:shadow-none">
+            <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="border-0 bg-transparent mr-0 sm:mr-3 md:mr-6 focus:ring-0">
             <a href="javascript:void(0);" class="hover:text-red">
               <i class="fa-solid fa-magnifying-glass w-5 mr-3 sm:mr-6 md:mr-0 cursor-pointer text-2xl"></i>
             </a>
@@ -30,10 +30,10 @@
         </div>
       </div>
       <ul class="hidden md:flex flex-col md:flex-row w-full md:w-auto text-center bg-white md:bg-transparent font-bold menu">
-        <li class="md:border-r px-12 py-6 md:py-10 mx-3 md:mx-0 border-b md:border-b-0 self-center"><a href="#" class="p-4 hover:text-red">探索</a></li>
-        <li class="md:border-r px-12 py-6 md:py-10 mx-3 md:mx-0 self-center"><a href="#" class="p-4 hover:text-red">市值</a></li>
-        <li class="mx-3 md:mx-0 mb-6 md:mb-0">
-          <a href="#" class="hidden md:block px-12 py-10 hover:text-red">
+        <li class="md:border-r px-12 py-6 md:px-0 md:py-10 mx-3 md:mx-0 border-b md:border-b-0 self-center"><a href="#" class="p-4 hover:text-red">探索</a></li>
+        <li class="md:border-r px-12 py-6 md:px-0 md:py-10 mx-3 md:mx-0 self-center"><a href="#" class="p-4 hover:text-red">市值</a></li>
+        <li class="mx-3 md:mx-0 mb-6 md:mb-0 self-center">
+          <a href="#" class="hidden md:block hover:text-red p-4">
             <i class="fa-solid fa-wallet text-2xl"></i>
           </a>
           <button class="md:hidden bg-red text-white w-full py-3">連結錢包</button>
@@ -47,7 +47,7 @@
   </main>
 
   <footer class="bg-gray-light py-6 text-center border-t-4">
-    © ART NFT. All Rights Reserved
+    <p>© ART NFT. All Rights Reserved</p>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
