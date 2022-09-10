@@ -33,7 +33,7 @@ html {
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-family: Noto Sans TC, system-ui, sans-serif; /* 4 */
 }
 
 /*
@@ -685,6 +685,7 @@ select {
 }
 .btn-white-outline {
   position: relative;
+  border-color: transparent;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 3rem;
@@ -704,9 +705,6 @@ select {
   border-bottom: 16px black solid;
 }
 .btn-white-outline:hover {
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(230 85 59 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -797,10 +795,6 @@ select {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
 }
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -826,11 +820,17 @@ select {
 .mt-3 {
   margin-top: 0.75rem;
 }
+.ml-4 {
+  margin-left: 1rem;
+}
 .mb-12 {
   margin-bottom: 3rem;
 }
 .mb-8 {
   margin-bottom: 2rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .mt-12 {
   margin-top: 3rem;
@@ -870,6 +870,9 @@ select {
 .h-\[1\.125rem\] {
   height: 1.125rem;
 }
+.min-h-\[72px\] {
+  min-height: 72px;
+}
 .w-full {
   width: 100%;
 }
@@ -887,6 +890,9 @@ select {
 }
 .w-\[5\.33rem\] {
   width: 5.33rem;
+}
+.w-56 {
+  width: 14rem;
 }
 .w-5 {
   width: 1.25rem;
@@ -926,6 +932,11 @@ select {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.items-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
 .items-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -943,6 +954,16 @@ select {
 }
 .gap-y-4 {
   row-gap: 1rem;
+}
+.divide-x > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--tw-divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+}
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 .self-end {
   -ms-flex-item-align: end;
@@ -979,8 +1000,9 @@ select {
 .border-t {
   border-top-width: 1px;
 }
-.border-t-4 {
-  border-top-width: 4px;
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .border-white {
   --tw-border-opacity: 1;
@@ -1068,10 +1090,6 @@ select {
   padding-left: 3rem;
   padding-right: 3rem;
 }
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1090,6 +1108,12 @@ select {
 }
 .indent-\[101\%\] {
   text-indent: 101%;
+}
+.font-dis1 {
+  font-family: Squada One;
+}
+.font-dis2 {
+  font-family: Paytone One;
 }
 .text-4xl {
   font-size: 2.25rem;
@@ -1119,12 +1143,11 @@ select {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-\[20px\] {
+  font-size: 20px;
+}
 .font-bold {
   font-weight: 700;
-}
-.text-gray {
-  --tw-text-opacity: 1;
-  color: rgb(128 128 128 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -1217,11 +1240,11 @@ select {
   color: rgb(230 85 59 / var(--tw-text-opacity));
 }
 
-.focus\:shadow-none:focus {
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.focus\:ring-0:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+          box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
 .group:hover .group-hover\:block {

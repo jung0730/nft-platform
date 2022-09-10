@@ -13,14 +13,14 @@
 <body>
   <header class="bg-gray-light md:border-b">
     <nav class="md:container flex items-center flex-col md:flex-row">
-      <div class="flex w-full md:w-auto justify-between items-center flex-1 py-4 px-4 md:py-0 md:px-0">
+      <div class="flex w-full min-h-[72px] md:w-auto justify-between items-center flex-1 py-4 px-4 md:py-0 md:px-0">
         <h1>
           <a href="index.html" class="w-[5.33rem] md:w-[11.875rem] h-[1.125rem] md:h-10 block indent-[101%] overflow-hidden whitespace-nowrap bg-cover" style="background-image: url('./assets/images/logo.svg');">Art NFT</a>
         </h1>
         <div class="flex items-center">
           <div class="flex items-center md:border-l md:border-r px-0 md:px-12 py-0 md:py-8">
-            <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="border-0 bg-transparent mr-0 sm:mr-3 md:mr-6 focus:shadow-none">
-            <a href="javascript:void(0);" class="hover:text-red">
+            <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="w-56 hidden md:block border-0 bg-transparent mr-0 sm:mr-3 md:mr-6 focus:ring-0 search">
+            <a href="javascript:void(0);" class="hover:text-red" onclick="toggleSearchBar()">
               <i class="fa-solid fa-magnifying-glass w-5 mr-3 sm:mr-6 md:mr-0 cursor-pointer text-2xl"></i>
             </a>
           </div>
@@ -30,10 +30,10 @@
         </div>
       </div>
       <ul class="hidden md:flex flex-col md:flex-row w-full md:w-auto text-center bg-white md:bg-transparent font-bold menu">
-        <li class="md:border-r px-12 py-6 md:py-10 mx-3 md:mx-0 border-b md:border-b-0 self-center"><a href="#" class="p-4 hover:text-red">探索</a></li>
-        <li class="md:border-r px-12 py-6 md:py-10 mx-3 md:mx-0 self-center"><a href="#" class="p-4 hover:text-red">市值</a></li>
-        <li class="mx-3 md:mx-0 mb-6 md:mb-0">
-          <a href="#" class="hidden md:block px-12 py-10 hover:text-red">
+        <li class="md:border-r px-12 py-6 md:px-0 md:py-10 mx-3 md:mx-0 border-b md:border-b-0 self-center"><a href="#" class="p-4 hover:text-red">探索</a></li>
+        <li class="md:border-r px-12 py-6 md:px-0 md:py-10 mx-3 md:mx-0 self-center"><a href="#" class="p-4 hover:text-red">市值</a></li>
+        <li class="mx-3 md:mx-0 mb-6 md:mb-0 self-center">
+          <a href="#" class="hidden md:block hover:text-red p-4">
             <i class="fa-solid fa-wallet text-2xl"></i>
           </a>
           <button class="md:hidden bg-red text-white w-full py-3">連結錢包</button>
@@ -47,17 +47,17 @@
 <section class="mb-10 md:container">
   <ul class="flex flex-wrap bg-white">
     <li class="flex flex-col md:flex-row border-b-2 md:w-full">
-      <div class="hidden md:block vertical-writing text-5xl p-6 bg-black text-white">Recommend<spam class="text-xl mt-3 font-bold">推 薦 系 列</spam></div>
+      <div class="hidden md:block vertical-writing p-6 bg-black border border-black"><h2 class="text-5xl text-white">Recommend<spam class="text-xl mt-3 font-bold">推 薦 系 列</spam></h2></div>
       <div class="w-full">
         <img src="assets/images/art01.jpg" class="object-cover h-full">
       </div>
       <div class="py-8 px-3 md:px-6 md:pt-20 md:pb-6 flex flex-col justify-between">
         <div>
-          <p class="text-lg mb-2">Kemus Wu</p>
+          <p class="text-lg mb-2 font-dis1">Kemus Wu</p>
           <h3 class="text-2xl font-bold mb-6 md:text-5xl">瞳孔:流動的脈絡</h1>
           <p class="mb-6">眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。</p>
         </div>
-        <button class="btn-primary-outline self-end">MORE</button>
+        <button class="btn-primary-outline self-end font-dis1">MORE</button>
       </div>
     </li>
     <li class="flex flex-col border-b-2 md:flex-row-reverse md:w-1/2">
@@ -66,11 +66,11 @@
       </div>
       <div class="py-8 px-3 md:px-6 md:pt-12 md:pb-6 md:w-1/2 flex flex-col justify-between">
         <div>
-          <p class="text-lg mb-2">Joanne</p>
+          <p class="text-lg mb-2 font-dis1">Joanne</p>
           <h3 class="text-2xl font-bold mb-6 md:text-3xl">海洋波度</h3>
           <p class="mb-6">海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。</p>
         </div>
-        <button class="btn-primary-outline self-end">MORE</button>
+        <button class="btn-primary-outline self-end font-dis1">MORE</button>
       </div>
     </li>
     <li class="flex flex-col border-b-2 md:flex-row-reverse md:w-1/2">
@@ -79,33 +79,36 @@
       </div>
       <div class="py-8 px-3 md:px-6 md:pt-12 md:pb-6 md:w-1/2 flex flex-col justify-between">
         <div>
-          <p class="text-lg mb-2">Michael</p>
+          <p class="text-lg mb-2 font-dis1">Michael</p>
           <h3 class="text-2xl font-bold mb-6 md:text-3xl">我家窗前的鳥</h3>
           <p class="mb-6">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
         </div>
-        <button class="btn-primary-outline self-end">MORE</button>
+        <button class="btn-primary-outline self-end font-dis1">MORE</button>
       </div>
     </li>
   </ul>
 </section>
 <section class="mb-10 container">
   <div class="flex justify-between border-b mb-6">
-    <h2 class="text-3xl">Ranking</h2>
-    <button class="btn-white-outline">MORE</button>
+    <div class="flex items-end">
+      <h2 class="text-5xl font-bold font-dis1">Ranking</h2>
+      <h3 class="font-bold text-[20px] hidden md:block ml-4">市價排行榜</h3>
+    </div>
+    <button class="btn-white-outline font-dis1">MORE</button>
   </div>
   <ul class="flex flex-wrap md:gap-6">
-    <li class="flex border w-full ranking-card mb-4 md:mb-0 md:flex-col ranking-card ranking-order" data-order="1">
-      <div class="text-2xl w-12 flex items-center justify-center md:hidden relative">1</div>
+    <li class="flex border w-full ranking-card mb-4 md:mb-0 bg-white md:flex-col ranking-card ranking-order" data-order="1">
+      <div class="text-2xl w-12 flex items-center justify-center md:hidden relative font-dis2">1</div>
       <div class="group w-24 md:w-full relative cursor-pointer bg-black">
         <img src="./assets/images/art04.jpg" class="object-cover aspect-square group-hover:opacity-30">
         <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block">
-          <button class="btn-primary">MORE</button>
+          <button class="btn-primary font-dis1">MORE</button>
         </div>
       </div>
       <div class="flex grow flex-col">
         <h3 class="text-lg font-bold border-b px-2 grow flex items-center md:py-4">散步遇到的女人</h3>
         <div class="flex px-2 justify-between py-2">
-          <p>Yui</p>
+          <p class="font-dis1">Yui</p>
           <div class="flex items-center">
             <i class="fa-brands fa-ethereum w-2 mr-2"></i>
             <span>300</span>
@@ -113,18 +116,18 @@
         </div>
       </div>
     </li>
-    <li class="flex border w-full ranking-card mb-4 md:mb-0 md:flex-col ranking-card ranking-order" data-order="2">
-      <div class="text-2xl w-12 flex items-center justify-center md:hidden">2</div>
+    <li class="flex border w-full ranking-card mb-4 md:mb-0 bg-white md:flex-col ranking-card ranking-order" data-order="2">
+      <div class="text-2xl w-12 flex items-center justify-center md:hidden font-dis2">2</div>
       <div class="group w-24 md:w-full relative cursor-pointer bg-black">
         <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block">
-          <button class="btn-primary">MORE</button>
+          <button class="btn-primary font-dis1">MORE</button>
         </div>
         <img src="./assets/images/art05.jpg" class="object-cover aspect-square group-hover:opacity-30">
       </div>
       <div class="flex grow flex-col">
         <h3 class="text-lg font-bold border-b px-2 grow flex items-center md:py-4">爆炸頭的母親</h3>
         <div class="flex px-2 justify-between py-2">
-          <p>Bug Lin</p>
+          <p class="font-dis1">Bug Lin</p>
           <div class="flex items-center">
             <i class="fa-brands fa-ethereum w-2 mr-2"></i>
             <span>300</span>
@@ -132,18 +135,18 @@
         </div>
       </div>
     </li>
-    <li class="flex border w-full ranking-card mb-4 md:mb-0 md:flex-col ranking-card ranking-order" data-order="3">
-      <div class="text-2xl w-12 flex items-center justify-center md:hidden">3</div>
+    <li class="flex border w-full ranking-card mb-4 md:mb-0 bg-white md:flex-col ranking-card ranking-order" data-order="3">
+      <div class="text-2xl w-12 flex items-center justify-center md:hidden font-dis2">3</div>
       <div class="group w-24 md:w-full relative cursor-pointer bg-black">
         <div class="absolute bottom-0 right-0 z-10 hidden group-hover:block">
-          <button class="btn-primary">MORE</button>
+          <button class="btn-primary font-dis1">MORE</button>
         </div>
         <img src="./assets/images/art06.jpg" class="object-cover aspect-square group-hover:opacity-30">
       </div>
       <div class="flex grow flex-col">
         <h3 class="text-lg font-bold border-b px-2 grow flex items-center md:py-4">夏天的時候</h3>
         <div class="flex px-2 justify-between py-2">
-          <p>Michael</p>
+          <p class="font-dis1">Michael</p>
           <div class="flex items-center">
             <i class="fa-brands fa-ethereum w-2 mr-2"></i>
             <span>300</span>
@@ -151,18 +154,18 @@
         </div>
       </div>
     </li>
-    <li class="flex border w-full ranking-card mb-4 md:mb-0">
-      <div class="text-2xl w-12 flex items-center justify-center">4</div>
+    <li class="flex border w-full ranking-card mb-4 md:mb-0 bg-white">
+      <div class="text-2xl w-12 flex items-center justify-center font-dis2">4</div>
       <div class="w-24 group cursor-pointer relative bg-black">
         <div class="absolute top-2/4 left-2/4 hidden group-hover:block -translate-y-2/4 -translate-x-2/4">
-          <p class="text-white text-lg">More</p>
+          <p class="text-white text-lg font-dis1">More</p>
         </div>
         <img src="./assets/images/art07.jpg" class="object-cover aspect-square group-hover:opacity-30">
       </div>
       <div class="flex grow flex-col">
         <h3 class="text-lg font-bold border-b px-2 grow flex items-center">追求者送我的花</h3>
         <div class="flex px-2 justify-between py-2">
-          <p>Even Lai</p>
+          <p class="font-dis1">Even Lai</p>
           <div class="flex items-center">
             <i class="fa-brands fa-ethereum w-2 mr-2"></i>
             <span>300</span>
@@ -170,18 +173,18 @@
         </div>
       </div>
     </li>
-    <li class="flex border w-full ranking-card mb-4 md:mb-0">
-      <div class="text-2xl w-12 flex items-center justify-center">5</div>
+    <li class="flex border w-full ranking-card mb-4 md:mb-0 bg-white">
+      <div class="text-2xl w-12 flex items-center justify-center font-dis2">5</div>
       <div class="w-24 group cursor-pointer relative bg-black">
         <div class="absolute top-2/4 left-2/4 hidden group-hover:block -translate-y-2/4 -translate-x-2/4">
-          <p class="text-white text-lg">More</p>
+          <p class="text-white text-lg font-dis1">More</p>
         </div>
         <img src="./assets/images/art08.jpg" class="object-cover aspect-square group-hover:opacity-30">
       </div>
       <div class="flex grow flex-col">
         <h3 class="text-lg font-bold border-b px-2 grow flex items-center">今天釣到的魚</h3>
         <div class="flex px-2 justify-between py-2">
-          <p>Zoe Jiang</p>
+          <p class="font-dis1">Zoe Jiang</p>
           <div class="flex items-center">
             <i class="fa-brands fa-ethereum w-2 mr-2"></i>
             <span>300</span>
@@ -189,18 +192,18 @@
         </div>
       </div>
     </li>
-    <li class="flex border w-full ranking-card mb-4 md:mb-0">
-      <div class="text-2xl w-12 flex items-center justify-center">6</div>
+    <li class="flex border w-full ranking-card mb-4 md:mb-0 bg-white">
+      <div class="text-2xl w-12 flex items-center justify-center font-dis2">6</div>
       <div class="w-24 group cursor-pointer relative bg-black">
         <div class="absolute top-2/4 left-2/4 hidden group-hover:block -translate-y-2/4 -translate-x-2/4">
-          <p class="text-white text-lg">More</p>
+          <p class="text-white text-lg font-dis1">More</p>
         </div>
         <img src="./assets/images/art09.jpg" class="object-cover aspect-square group-hover:opacity-30">
       </div>
       <div class="flex grow flex-col">
         <h3 class="text-lg font-bold border-b px-2 grow flex items-center">人生中的貓咪們</h3>
         <div class="flex px-2 justify-between py-2">
-          <p>Zoe Jiang</p>
+          <p class="font-dis1">Zoe Jiang</p>
           <div class="flex items-center">
             <i class="fa-brands fa-ethereum w-2 mr-2"></i>
             <span>300</span>
@@ -212,12 +215,15 @@
 </section>
 <section class="mb-10 container">
   <div class="flex justify-between border-b mb-6">
-    <h2 class="text-3xl">Artist</h2>
-    <button class="btn-white-outline">MORE</button>
+    <div class="flex items-end">
+      <h2 class="text-5xl font-dis1 font-bold">Artist</h2>
+      <h3 class="font-bold text-[20px] hidden md:block ml-4">熱門藝術家</h3>
+    </div>
+    <button class="btn-white-outline font-dis1">MORE</button>
   </div>
   <div style="background-image: url(./assets/images/artist02.jpg);" class="mb-4 relative bg-cover bg-no-repeat bg-center w-full h-half-screen">
-    <h3 class="text-white text-3xl absolute top-6 left-6">Antony Wu</h3>
-    <button class="bottom-2 bg-white right-2 absolute btn-primary-outline">MORE</button>
+    <h3 class="text-white text-3xl absolute top-6 left-6 font-dis1">Antony Wu</h3>
+    <button class="bottom-2 bg-white right-2 absolute btn-primary-outline font-dis1">MORE</button>
   </div>
   <div class="bg-white px-6 py-6">
     ​喜愛大自然，創作題材常見大山、大水、花草與樹木。
@@ -225,8 +231,11 @@
 </section>
 <section class="mb-10 container"> 
   <div class="flex justify-between border-b mb-6">
-    <h2 class="text-3xl">Artwork</h2>
-    <button class="btn-white-outline">MORE</button>
+    <div class="flex items-end">
+      <h2 class="text-5xl font-bold font-dis1">Artwork</h2>
+      <h3 class="font-bold text-[20px] hidden md:block ml-4">最新藝術品</h3>
+    </div>
+    <button class="btn-white-outline font-dis1">MORE</button>
   </div>
   <div class="grid -mx-3">
     <div class="grid-sizer w-1/2 px-3 md:w-1/4"></div>
@@ -241,7 +250,7 @@
                 <span>300</span>
               </div>
             </div>
-            <button class="btn-white self-end">MORE</button>
+            <button class="font-dis1 btn-white self-end">MORE</button>
           </div>
         </div>
         <img src="assets/images/art09.jpg" class="border-white border-[10px] group-hover:opacity-30">
@@ -259,7 +268,7 @@
                 <span>300</span>
               </div>
             </div>
-            <button class="btn-white self-end">MORE</button>
+            <button class="font-dis1 btn-white self-end">MORE</button>
           </div>
         </div>
         <img src="assets/images/art10.jpg" class="border-white border-[10px] group-hover:opacity-30">
@@ -277,7 +286,7 @@
                 <span>300</span>
               </div>
             </div>
-            <button class="btn-white self-end">MORE</button>
+            <button class="font-dis1 btn-white self-end">MORE</button>
           </div>
         </div>
         <img src="assets/images/art02.jpg" class="border-white border-[10px] group-hover:opacity-30">
@@ -295,7 +304,7 @@
                 <span>300</span>
               </div>
             </div>
-            <button class="btn-white self-end">MORE</button>
+            <button class="font-dis1 btn-white self-end">MORE</button>
           </div>
         </div>
         <img src="assets/images/art11.jpg" class="border-white border-[10px] group-hover:opacity-30">
@@ -313,7 +322,7 @@
                 <span>300</span>
               </div>
             </div>
-            <button class="btn-white self-end">MORE</button>
+            <button class="font-dis1 btn-white self-end">MORE</button>
           </div>
         </div>
         <img src="assets/images/art12.jpg" class="border-white border-[10px] group-hover:opacity-30">
@@ -331,7 +340,7 @@
                 <span>300</span>
               </div>
             </div>
-            <button class="btn-white self-end">MORE</button>
+            <button class="font-dis1 btn-white self-end">MORE</button>
           </div>
         </div>
         <img src="assets/images/art03.jpg" class="border-white border-[10px] group-hover:opacity-30">
@@ -349,7 +358,7 @@
                 <span>300</span>
               </div>
             </div>
-            <button class="btn-white self-end">MORE</button>
+            <button class="font-dis1 btn-white self-end">MORE</button>
           </div>
         </div>
         <img src="assets/images/art04.jpg" class="border-white border-[10px] group-hover:opacity-30">
@@ -367,7 +376,7 @@
                 <span>300</span>
               </div>
             </div>
-            <button class="btn-white self-end">MORE</button>
+            <button class="font-dis1 btn-white self-end">MORE</button>
           </div>
         </div>
         <img src="assets/images/art27.jpg" class="border-white border-[10px] group-hover:opacity-30">
@@ -379,8 +388,8 @@
 <section>
   <h2 class="text-center text-3xl mb-4">Join Us</h2>
   <p class="text-center font-bold text-xl mb-8">創建並出售你的藝術品</p>
-  <div class="border-t-2 border-b-2">
-    <ul class="border-t border-b my-2 flex flex-wrap">
+  <div class="border-t-2">
+    <ul class="border-t mt-2 flex flex-wrap">
       <li class="container text-center mt-12 mb-12 md:w-1/4">
         <i class="fa-solid fa-wallet text-4xl mb-4 text-red"></i>
         <p class="text-lg font-bold mb-6">設置你的錢包</p>
@@ -406,8 +415,10 @@
 </section>
   </main>
 
-  <footer class="bg-gray-light py-6 text-center border-t-4">
-    © ART NFT. All Rights Reserved
+  <footer class="bg-gray-light text-center border-t">
+    <div class="mt-2 border-t-2">
+      <p class="py-6">© ART NFT. All Rights Reserved</p>
+    </div>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
@@ -418,8 +429,15 @@
 </html>
 <script>
   function toggleNav() {
-    console.log('a')
     const ul = document.querySelector('.menu');
     ul.style.display = (ul.style.display) === 'block' ? 'none' : 'block';
+  }
+
+  function toggleSearchBar() {
+    const mediaQuery = window.matchMedia('(max-width: 767px)')
+    const ul = document.querySelector('.search');
+    if (mediaQuery.matches) {
+      ul.style.display = (ul.style.display) === 'block' ? 'none' : 'block';
+    }
   }
 </script>
